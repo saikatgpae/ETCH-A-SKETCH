@@ -1,3 +1,14 @@
 body{
     background-color: black;
 }
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    
+    border: 2px solid rgb(8, 233, 75);
+}
+.grid-container div{
+    border: 1px solid white;
+    height: 20px;
+}
