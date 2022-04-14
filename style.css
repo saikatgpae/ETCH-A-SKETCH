@@ -5,10 +5,16 @@ body{
 .grid-container{
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
-    
+    width: 500px;
+    height: 500px;
     border: 2px solid rgb(8, 233, 75);
 }
 .grid-container div{
-    border: 1px solid white;
-    height: 20px;
+    border: .5px solid white;  
+}
+.grid-div{
+    background-color: rgb(34, 147, 147);
+}
+.grid-div:hover{
+    background-color: black;
 }
