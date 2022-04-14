@@ -18,3 +18,11 @@ body{
 .grid-div:hover{
     background-color: black;
 }
+
+.box {
+    height: 100px;
+    width: 100px;
+    background: lightgreen;
+    margin: 5px;
+  }
+  

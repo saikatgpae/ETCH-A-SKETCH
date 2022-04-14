@@ -1,4 +1,4 @@
-console.log('Hello World!')
+//console.log('Hello World!')
 
 document.addEventListener('DOMContentLoaded', ()=>{
     
@@ -21,4 +21,12 @@ document.addEventListener('DOMContentLoaded', ()=>{
         const grid_div = document.createElement('div');
         document.querySelector('.grid-container').appendChild(grid_div).setAttributeNode(grid_div_attr)
     }
+
+    //adding the adevenlisner method to function the mouse hover
+    var grid = document.querySelectorAll('.grid-div');
+    Array.from(grid).forEach(v => v.addEventListener('mouseover', ()=>{
+        v.style.background = 'black';
+    }))
+    //var arr = Array.from(grid);
+    //console.log(arr.length);
 })
