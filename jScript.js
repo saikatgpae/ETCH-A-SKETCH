@@ -18,12 +18,16 @@ document.addEventListener('DOMContentLoaded', ()=>{
     document.querySelector('.main').appendChild(div).setAttributeNode(att);
     
     // creating 16*16 256 div inside the div of class grid-container
+    const frag = document.createDocumentFragment();
+
+    //const frag = createDocumentFragment();
     for(let i = 1; i<=256; i++){
         const grid_div_attr = document.createAttribute('class');
         grid_div_attr.value = 'grid-div';
         const grid_div = document.createElement('div');
-        document.querySelector('.grid-container').appendChild(grid_div).setAttributeNode(grid_div_attr)
+        frag.appendChild(grid_div).setAttributeNode(grid_div_attr)
     }
+    document.querySelector('.grid-container').appendChild(frag);
 
     //adding the adevenlisner method to function the mouse hover to trail through the grid 
     var grid = document.querySelectorAll('.grid-div');
