@@ -1,4 +1,7 @@
 //console.log('Hello World!')
+function grid(){
+    grid_number = parseInt(prompt('Please enter the grid matrix between 1-100'))
+}
 
 document.addEventListener('DOMContentLoaded', ()=>{
     
@@ -22,7 +25,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
         document.querySelector('.grid-container').appendChild(grid_div).setAttributeNode(grid_div_attr)
     }
 
-    //adding the adevenlisner method to function the mouse hover
+    //adding the adevenlisner method to function the mouse hover to trail through the grid 
     var grid = document.querySelectorAll('.grid-div');
     Array.from(grid).forEach(v => v.addEventListener('mouseover', ()=>{
         v.style.background = 'black';
