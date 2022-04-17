@@ -1,7 +1,26 @@
 body{
     background-color: black;
 }
+.main{
+    width: 960px;
+    height: 960px;
+    border: 2px solid rgb(17, 236, 90);
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
 
+}
+.new-grid{
+    /*/border: .1px solid blue;*/
+    background-color: rgb(118, 119, 130); 
+}
+
+
+
+/* DEFAULT GRID*/
 .grid-container{
     display: grid;
     position: fixed;
@@ -10,12 +29,13 @@ body{
     grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
     width: 960px;
     height: 960px;
-    border: 2px solid rgb(245, 85, 245);
+    border: 2px solid rgb(17, 236, 90);
     position: absolute;
 }
 .grid-div{
-    background-color: white;  
+    background-color: rgb(118, 119, 130); 
+    /*border: 1px solid red; */
 }
 .grid-div:hover{
-    background-color: black;
+    background-color: rgb(103, 30, 95);
 }
