@@ -1,7 +1,11 @@
 //console.log('Hello World!')
 function grid(){
-    //taking the input to create the grid and storing the input
-    var grid_number = parseInt(prompt('Please enter the grid matrix between 1-100'));
+    //taking the input between 1-100 to create the grid and storing the input
+    do{
+        var grid_number = parseInt(prompt('Please enter the grid matrix less than 100','64'));
+    } while(grid_number <1 || grid_number >100);
+    
+   
     document.getElementById('grid-view').innerHTML = 'New Grid '+grid_number+'*'+grid_number;
     //removing all child node inside the main div
     const element = document.querySelector(".main");
@@ -28,6 +32,7 @@ function grid(){
     Array.from(grid_new).forEach(v => v.addEventListener('mouseover', ()=>{
         v.style.background = 'black';
     }))
+    
 }
 
 document.addEventListener('DOMContentLoaded', ()=>{
